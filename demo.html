@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>Адаптивное меню</title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+		<script src="jquery.adaptivemenu.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				$("#menu").AdaptiveMenu({'class':'adaptive-menu','classLinckMore':'classLinckMore'});
+			});
+		</script>
+		<style>
+			#menu, ul.adaptive-menu {
+				padding: 0;
+			}
+			ul.adaptive-menu li {
+				list-style: none;
+			}
+			li.classLinckMore {
+				cursor: pointer;
+				text-decoration: underline;
+			}
+		</style>
+    </head>
+    <body>
+		<ul id="menu">
+			<li>Пункт 1</li>
+			<li>Пункт 2</li>
+			<li>Пункт 3</li>
+			<li>Пункт 4</li>
+			<li>Пункт 5</li>
+			<li>Пункт 6</li>
+			<li><a href="#">Пункт 7</a></li>
+			<li><a href="#">Пункт 8</a></li>
+			<li><a href="#">Пункт 9</a></li>
+			<li><a href="#">Пункт 10</a></li>
+			<li><a href="#">Пункт 11</a></li>
+			<li><a href="#">Пункт 12</a></li>
+			<li><a href="#">Пункт 13</a></li>
+		</ul>
+		<br>
+		<div id="log"></div>​
+    </body>
+</html>
